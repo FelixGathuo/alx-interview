@@ -1,10 +1,16 @@
-#!/usr/bin/python3
 def pascal_triangle(n):
-	result_list = []
-	if n <= 0:
-		return []
-
-	for i in range(n):
-		result_list.append(str(11**i))
-
-	return (result_list)
+    '''A function that creates a list of lists of integers
+    in the Pascal's triangle of an integer n.
+    '''
+    triangle = []
+    if type(n) is not int or n <= 0:
+        return triangle
+    for i in range(n):
+        line = []
+        for j in range(i + 1):
+            if j == 0 or j == i:
+                line.append(1)
+            elif i > 0 and j > 0:
+                line.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
+        triangle.append(line)
+    return triangle
