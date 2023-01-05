@@ -16,16 +16,16 @@ def canUnlockAll(boxes):
 
     #  While there are keys available and not all boxes have been opened,
     while keys and len(opened_boxes) < len(boxes):
-    
+
         # Take a key from the set
         key = keys.pop()
-    
+
         # If the key is a valid box number and the box has not been opened yet,
         if key < len(boxes) and key not in opened_boxes:
-        
+
             # Add the key to the set of opened boxes
             opened_boxes.add(key)
-        
+
             # Add the keys in the box to the set of keys
             keys.update(boxes[key])
 
