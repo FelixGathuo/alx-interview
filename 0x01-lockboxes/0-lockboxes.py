@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def canUnlockAll(boxes):
     """
     This function takes a list of boxes as input, where each box is a list of keys.
