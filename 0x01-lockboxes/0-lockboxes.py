@@ -4,6 +4,12 @@ def canUnlockAll(boxes):
     """
     This function takes a list of boxes as input, where each box is a list of keys.
     The function returns True if all the boxes can be opened, else it returns False.
+    
+    Parameters:
+    boxes (list): A list of lists, where each inner list represents a box containing keys.
+    
+    Returns:
+    bool: True if all boxes can be opened, False otherwise.
     """
     # Initialize a set of keys that are available
     keys = set()
