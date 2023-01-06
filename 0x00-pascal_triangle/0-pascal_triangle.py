@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''
+This module generates a pascal
+triangle given an inout as an integer
+'''
 def pascal_triangle(n):
     """
     Generate a Pascal triangle of n rows.
