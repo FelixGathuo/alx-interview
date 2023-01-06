@@ -3,16 +3,18 @@
 This module generates a pascal
 triangle given an inout as an integer
 '''
+
+
 def pascal_triangle(n):
-    """
+    '''
     Generate a Pascal triangle of n rows.
-    
-    Args:
+
+Args:
     n: int, the number of rows in the triangle.
-    
-    Returns:
+
+Returns:
     triangle: list of lists, the Pascal triangle.
-    """
+    '''
     triangle = []
     for i in range(n):
         if i == 0:
@@ -24,4 +26,3 @@ def pascal_triangle(n):
             row.append(1)
             triangle.append(row)
     return triangle
-  
