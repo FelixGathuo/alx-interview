@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-
+'''
+    This function takes a list of boxes as input, where each box is a list of keys.
+    The function returns True if all the boxes can be opened, else it returns False.
+'''
 def canUnlockAll(boxes):
     '''
     This function takes a list of boxes as input, where each box is a list of keys.
