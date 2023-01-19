@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import sys
 
 lines_count = 0
@@ -28,3 +27,4 @@ except KeyboardInterrupt:
     print("File size:", total_size)
     for status, count in sorted(status_codes.items()):
         if count > 0:
+            print(f"{status}: {count}")
