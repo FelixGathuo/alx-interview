@@ -10,7 +10,8 @@ try:
         parts = line.split(" ")
         if len(parts) != 9:
             continue
-        ip, date, request, status, size = parts[0], parts[3], parts[5], int(parts[8]), int(parts[9])
+        ip, date, request = parts[0], parts[3], parts[5]
+        status, size = int(parts[8]), int(parts[9])
 
         if status not in status_codes:
             continue
