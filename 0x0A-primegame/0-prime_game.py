@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 "Bingo bango bongo I don't want to leave the congo"
 
+
 def isWinner(x, nums):
     "Playing this game instead of working on my project"
+
     ben = 0
     maria = 0
 
